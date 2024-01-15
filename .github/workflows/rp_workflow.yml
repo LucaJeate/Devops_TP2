@@ -22,7 +22,7 @@ jobs:
     - name: flake8 Lint
       uses: py-actions/flake8@v2
       with:
-        path: "C:\\TP_Devops2\\random-picking.py"
+        path: "C:\TP_Devops2\random-picking.py"
 
     - name: Execute Script
       run: |
