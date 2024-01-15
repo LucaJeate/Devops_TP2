@@ -19,10 +19,10 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
  
-    - name: Python Linter
-      uses: LucaJeate/Devops_TP2@main
+    - name: flake8 Lint
+      uses: py-actions/flake8@v2
       with:
-        source: "random-picking.py"
+        path: "C:\\TP_Devops2\\random-picking.py"
 
     - name: Execute Script
       run: |
