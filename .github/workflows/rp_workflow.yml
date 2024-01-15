@@ -19,10 +19,8 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
  
-    - name: flake8 Lint
-      uses: py-actions/flake8@v2
-      with:
-        path: 'C:\TP_Devops2\'
+    - name: flake8
+      run: flake8
 
     - name: Execute Script
       run: |
