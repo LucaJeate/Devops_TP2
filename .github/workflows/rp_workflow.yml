@@ -21,10 +21,12 @@ jobs:
  
     - name: Python Linter
       uses: LucaJeate/Devops_TP2@main
+      with:
+        source: "random-picking.py"
 
     - name: Execute Script
       run: |
-        python script.py
+        python random-picking.yml.py
 
     -
         name: Checkout
