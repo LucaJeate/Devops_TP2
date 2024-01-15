@@ -24,7 +24,7 @@ jobs:
 
     - name: Execute Script
       run: |
-        python random-picking.yml.py
+        python random-picking.py
 
     -
         name: Checkout
