@@ -1,7 +1,8 @@
 from math import comb
 
-def  proba_tirage_uniforme(k, nb_noires, nb_blanches, nb_rouges):
-    total_boules=nb_noires + nb_blanches + nb_rouges
+
+def proba_tirage_uniforme(k, nb_noires, nb_blanches, nb_rouges):
+    total_boules = nb_noires + nb_blanches + nb_rouges
 
     if k > total_boules:
         raise ValueError("Le nombre de boules tirées incohérent.")
@@ -15,6 +16,7 @@ def  proba_tirage_uniforme(k, nb_noires, nb_blanches, nb_rouges):
     proba = (comb_noires * comb_blanches * comb_rouges) / comb_total
 
     return proba
+
 
 k = 3
 nb_noires = 5
